@@ -475,7 +475,7 @@
 432	and he honored her equally with his trusted wife in the halls,
 433	but he never lay with her, and he avoided the wife's anger.
 434	She carried burning torches with him, and she loved him most
-435	of the serving-women, and she had raised him when she was small.
+435	of the serving-women, and she had raised him when he was small.
 436	He opened the doors of the densely built chamber
 437	and sat down on the bed, and took off his soft tunic,
 438	and put it in the hands of the close-thinking old woman.
