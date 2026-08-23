@@ -196,7 +196,7 @@
 > (narrator)
 182	So he spoke, and Pontonous mixed the honey-hearted wine,
 183	and he served it to all, beginning the rite in the cups.
-184	But when they had poured and drunk as much as the taste wanted,
+184	But when they had poured and drunk as much as the heart wanted,
 185	then Alcinous spoke in the assembly among them and said:
 > Alcinous
 186	Hear me, leaders and counsellors of the Phaeacians,
