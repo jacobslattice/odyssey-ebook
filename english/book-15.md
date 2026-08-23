@@ -224,7 +224,7 @@
 > Telemachus
 195	Son of Nestor, how could you promise me and finish
 196	my word? We claim to be guests all the way through
-197	from our fathers' friendship, and we are all of the same age.
+197	from our fathers' friendship, and we are of the same age.
 198	This road will put us still more into like-mindedness.
 199	Do not lead me past the ship, Zeus-nourished. Leave me here,
 200	or the old man may hold me in his house against my will
