@@ -1,12 +1,23 @@
-# Rebuild
+# Rebuild the EPUB
 
+Need: Python 3. Standard library only. No pip packages.
+
+```
 python3 scripts/build_ebook.py
+```
 
-The builder expects:
-- /workspace/odyssey/english/book-NN.md
-- /workspace/odyssey/scripts/build_ebook.py
-- /workspace/contest/epub-art/cover-exact.jpg
+Run that from the root of this repository.
 
-On a checkout of this repo, either keep those absolute paths or edit the three Path constants at the top of scripts/build_ebook.py to point at english/, this script, and cover/cover-exact.jpg.
+It reads:
 
-Cover SHA-256 must remain 8c39436a4243ca11596380909b87c7962319d20cc24398493c7b5432b2252bc3.
+- `english/book-01.md` through `english/book-24.md`
+- `cover/cover-exact.jpg`
+
+It writes:
+
+- `ebook/Odyssey.epub`
+- `ebook/Odyssey.md`
+
+The jacket must stay the exact file (`sha256 8c39436a4243ca11596380909b87c7962319d20cc24398493c7b5432b2252bc3`). The builder refuses to run if the hash differs.
+
+Imprint text and styles are inside `scripts/build_ebook.py`.
