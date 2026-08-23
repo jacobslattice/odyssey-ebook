@@ -478,7 +478,7 @@
 428	of the suitor men who eat up your livelihood.
 > (narrator)
 429	So speaking Athena touched him with a staff.
-430	She withered the handsome skin on his bent limbs
+430	She withered the handsome skin on your bent limbs
 431	and destroyed the yellow hair from your head, and around him she put the skin
 432	of an old man, old, on all his limbs.
 433	She dimmed his eyes that were very beautiful before.
