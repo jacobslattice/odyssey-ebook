@@ -121,6 +121,8 @@ def source_path(book: int) -> Path:
 def parse_book(book: int) -> list[tuple[str, object]]:
     """Return a sequence of ('speaker', name) and ('verse', n, text)."""
     path = source_path(book)
+    if not path.is_file():
+        raise SystemExit(f"missing book file: {path}")
     text = path.read_text(encoding="utf-8")
     events: list[tuple[str, object]] = []
     verses: dict[int, str] = {}
