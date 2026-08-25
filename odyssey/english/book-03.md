@@ -42,14 +42,14 @@
 33	were making ready the feast, roasting meats and piercing others on spits.
 34	And when they saw the strangers, they all came in a body,
 35	took them by the hands in greeting, and bid them sit.
-36	First Nestor's son Pisistratus, coming close,
+36	First Nestor's son Peisistratus, coming close,
 37	took both by the hand and seated them beside the feast
 38	on soft fleeces on the sands of the sea,
 39	beside his brother Thrasymedes and his own father.
 40	Then he gave them portions of the innards, and poured wine
 41	in a golden cup; and pledging them he spoke
 42	to Pallas Athena, daughter of aegis-bearing Zeus:
-> Pisistratus
+> Peisistratus
 43	Pray now, stranger, to lord Poseidon;
 44	for you have come upon his feast, arriving here.
 45	But when you have poured a libation and prayed, as is right,
@@ -436,7 +436,7 @@
 397	but Gerenian horseman Nestor put to bed there
 398	Telemachus, the dear son of godlike Odysseus,
 399	on a corded bed under the loud-echoing portico,
-400	and beside him Pisistratus of the good ashen spear, leader of men,
+400	and beside him Peisistratus of the good ashen spear, leader of men,
 401	who was still an unmarried young man of his children in the halls.
 402	He himself slept in the inner part of the high house,
 403	and the lady his wife made ready the bed and the bedding.
@@ -451,7 +451,7 @@
 412	holding a scepter. And his sons gathered around him in a body,
 413	coming from their rooms: Echephron and Stratius
 414	and Perseus and Aretus and godlike Thrasymedes.
-415	And then sixth the hero Pisistratus came to them,
+415	And then sixth the hero Peisistratus came to them,
 416	and they brought godlike Telemachus and seated him beside them.
 417	Then Gerenian horseman Nestor began the talk among them:
 > Nestor
@@ -492,7 +492,7 @@
 451	the daughters and daughters-in-law and the respected wife
 452	of Nestor, Eurydice, eldest of the daughters of Clymenus.
 453	Then the men lifted her from the wide-wayed earth
-454	and held her. And Pisistratus, leader of men, cut her throat.
+454	and held her. And Peisistratus, leader of men, cut her throat.
 455	And when the black blood had flowed from her, and the spirit left the bones,
 456	they quickly cut her up, and at once cut out the thigh-pieces
 457	all in due order, and covered them with fat,
@@ -522,7 +522,7 @@
 479	And a woman, the housekeeper, put bread and wine in,
 480	and cooked meats, such as kings nourished by Zeus eat.
 481	Then Telemachus stepped up into the chariot of great beauty.
-482	And beside him Nestor's son Pisistratus, leader of men,
+482	And beside him Nestor's son Peisistratus, leader of men,
 483	stepped into the chariot and took the reins in his hands,
 484	and he whipped them to go, and the two flew, not unwilling,
 485	to the plain, and they left the steep city of Pylos.

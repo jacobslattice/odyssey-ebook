@@ -169,8 +169,8 @@
 153	for my sake, and he was shedding a bitter tear under his brows,
 154	holding a purple cloak up before his eyes.
 > (narrator)
-155	Then Nestor's son Pisistratus spoke facing him:
-> Pisistratus
+155	Then Nestor's son Peisistratus spoke facing him:
+> Peisistratus
 156	Son of Atreus, Zeus-nourished Menelaus, leader of the people,
 157	this is truly that man's son, as you say.
 158	But he is sound-minded, and he feels righteous anger in his heart
@@ -208,7 +208,7 @@
 187	For he remembered in his heart blameless Antilochus,
 188	whom the shining son of bright Dawn killed.
 189	Remembering him he spoke winged words:
-> Pisistratus
+> Peisistratus
 190	Son of Atreus, Nestor the old man used to say that you were
 191	clear-headed beyond mortals, whenever we remembered you
 192	in his halls, and asked one another.
