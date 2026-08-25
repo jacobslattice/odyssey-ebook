@@ -38,6 +38,8 @@
 
 ## Limits
 
-One English line per Greek line, verified by script.
+**What held**
+
+- One English line per Greek line, verified by script.
 
 This English is usable. It is not a finished literary edition.
