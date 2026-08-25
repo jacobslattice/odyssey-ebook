@@ -12,4 +12,4 @@ Writes `ebook/Odyssey.epub`. Needs Python 3 only. That output folder is gitignor
 
 ## Notes
 
-A book-by-book summary of this English is in [NOTES.md](NOTES.md).
+How this English was made: [TRANSLATION-NOTES.md](TRANSLATION-NOTES.md).
