@@ -1,0 +1,25 @@
+name: ebook
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build ebook
+        run: python3 build_ebook.py
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Validate EPUB
+        run: |
+          curl -fsSL -o /tmp/epubcheck.zip \
+            https://github.com/w3c/epubcheck/releases/download/v5.2.1/epubcheck-5.2.1.zip
+          unzip -q /tmp/epubcheck.zip -d /tmp
+          java -jar /tmp/epubcheck-5.2.1/epubcheck.jar ebook/Odyssey.epub
