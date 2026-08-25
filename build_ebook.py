@@ -182,7 +182,7 @@ def build_markdown(books: dict[int, list]) -> str:
         "",
         IMPRINT["credit"],
         IMPRINT["made"],
-        IMPRINT["date"],
+        f"Date: {IMPRINT['date']}",
         "",
         IMPRINT["rights"],
         "",
