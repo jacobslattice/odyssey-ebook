@@ -7,7 +7,6 @@ import html
 import hashlib
 import re
 import zipfile
-from datetime import datetime, timezone
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -75,7 +74,8 @@ EXPECTED_TOTAL = 12107
 
 # Stable identifier for this edition (not a person).
 PUB_UUID = "urn:uuid:6f4e2c91-8a17-4b3d-9e05-2c8f1a7d4b60"
-MODIFIED = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+# Imprint date, not the clock time of a rebuild.
+MODIFIED = "2026-08-19T00:00:00Z"
 
 # Front-matter copy written for this edition.
 IMPRINT = {
@@ -121,6 +121,8 @@ def source_path(book: int) -> Path:
 def parse_book(book: int) -> list[tuple[str, object]]:
     """Return a sequence of ('speaker', name) and ('verse', n, text)."""
     path = source_path(book)
+    if not path.is_file():
+        raise SystemExit(f"missing book file: {path}")
     text = path.read_text(encoding="utf-8")
     events: list[tuple[str, object]] = []
     verses: dict[int, str] = {}
@@ -176,15 +178,13 @@ def build_markdown(books: dict[int, list]) -> str:
         "",
         "translated from the Greek",
         "",
-        IMPRINT["author"],
-        "",
     ]
     parts.extend([
         IMPRINT["author"],
         "",
         IMPRINT["credit"],
         IMPRINT["made"],
-        IMPRINT["date"],
+        f"Date: {IMPRINT['date']}",
         "",
         IMPRINT["rights"],
         "",
@@ -380,6 +380,15 @@ def xhtml_shell(title: str, body_class: str, body: str, extra_head: str = "") ->
     )
 
 
+def cover_xhtml() -> str:
+    body = (
+        '  <section epub:type="cover">\n'
+        '    <img src="cover.jpg" alt="The Odyssey"/>\n'
+        "  </section>\n"
+    )
+    return xhtml_shell("Cover", "cover-page", body)
+
+
 def title_xhtml() -> str:
     body = (
         '  <section epub:type="titlepage">\n'
@@ -434,6 +443,7 @@ def book_xhtml(book: int, events: list) -> str:
 
 def nav_xhtml() -> str:
     items = [
+        '      <li><a href="cover.xhtml">Cover</a></li>',
         '      <li><a href="title.xhtml">Title</a></li>',
         '      <li><a href="copyright.xhtml">About this edition</a></li>',
     ]
@@ -450,6 +460,7 @@ def nav_xhtml() -> str:
         "  </nav>\n"
         '  <nav epub:type="landmarks" id="landmarks" hidden="hidden">\n'
         "    <ol>\n"
+        '      <li><a epub:type="cover" href="cover.xhtml">Cover</a></li>\n'
         '      <li><a epub:type="frontmatter" href="title.xhtml">Title page</a></li>\n'
         '      <li><a epub:type="bodymatter" href="book-01.xhtml">Book I</a></li>\n'
         "    </ol>\n"
@@ -460,10 +471,11 @@ def nav_xhtml() -> str:
 
 def toc_ncx() -> str:
     points = [
-        ("np-title", 1, "Title", "title.xhtml"),
-        ("np-copyright", 2, "About this edition", "copyright.xhtml"),
+        ("np-cover", 1, "Cover", "cover.xhtml"),
+        ("np-title", 2, "Title", "title.xhtml"),
+        ("np-copyright", 3, "About this edition", "copyright.xhtml"),
     ]
-    play = 3
+    play = 4
     for book in range(1, 25):
         points.append(
             (f"np-book-{book:02d}", play, f"Book {ROMAN[book]}", f"book-{book:02d}.xhtml")
@@ -500,11 +512,12 @@ def content_opf() -> str:
         '    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>',
         '    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>',
         '    <item id="css" href="style.css" media-type="text/css"/>',
+        '    <item id="cover" href="cover.xhtml" media-type="application/xhtml+xml"/>',
         '    <item id="title" href="title.xhtml" media-type="application/xhtml+xml"/>',
         '    <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml"/>',
     ]
-    # Jacket is cover-image only. Do not put the painting in the linear spine.
     spine_refs = [
+        '    <itemref idref="cover"/>',
         '    <itemref idref="title"/>',
         '    <itemref idref="copyright"/>',
     ]
@@ -525,6 +538,10 @@ def content_opf() -> str:
         '    <dc:creator id="author">Homer</dc:creator>\n'
         '    <meta refines="#author" property="role" scheme="marc:relators">aut</meta>\n'
         '    <meta refines="#author" property="file-as">Homer</meta>\n'
+        '    <dc:contributor id="translator">Grok Bot</dc:contributor>\n'
+        '    <meta refines="#translator" property="role" scheme="marc:relators">trl</meta>\n'
+        '    <meta refines="#translator" property="file-as">Grok Bot</meta>\n'
+        f"    <dc:rights>{esc(IMPRINT['rights'])}</dc:rights>\n"
         "    <dc:description>translated from the Greek</dc:description>\n"
         '    <meta name="cover" content="cover-image"/>\n'
         f'    <meta property="dcterms:modified">{MODIFIED}</meta>\n'
@@ -599,6 +616,7 @@ def main() -> None:
         "OEBPS/nav.xhtml": nav_xhtml().encode("utf-8"),
         "OEBPS/style.css": CSS.encode("utf-8"),
         "OEBPS/cover.jpg": cover_bytes,
+        "OEBPS/cover.xhtml": cover_xhtml().encode("utf-8"),
         "OEBPS/title.xhtml": title_xhtml().encode("utf-8"),
         "OEBPS/copyright.xhtml": copyright_xhtml().encode("utf-8"),
     }
