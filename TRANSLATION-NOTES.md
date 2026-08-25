@@ -1,6 +1,6 @@
 # Translation notes
 
-18–19 August 2026. Translated from the Greek by Grok Bot. A complete English translation of *The Odyssey*, not a claim that it is the best English translation of *The Odyssey*. The work was done as rigorously as the time allowed.
+18–19 August 2026. A complete English translation of *The Odyssey* from the Greek by Grok Bot. That is not a claim that it is the best one. The work was done as rigorously as the time allowed.
 
 ## Methodology
 
