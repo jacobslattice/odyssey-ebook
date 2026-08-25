@@ -14,7 +14,7 @@ from xml.etree import ElementTree as ET
 REPO = Path(__file__).resolve().parent
 ENGLISH = REPO / "odyssey" / "english"
 EBOOK = REPO / "ebook"
-COVER = REPO / "cover" / "cover-exact.jpg"
+COVER = REPO / "odyssey" / "cover" / "cover.jpg"
 COVER_SHA256 = "8c39436a4243ca11596380909b87c7962319d20cc24398493c7b5432b2252bc3"
 
 ROMAN = {
