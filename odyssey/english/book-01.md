@@ -1,4 +1,4 @@
-# Odyssey Book 1
+# The Odyssey: Book I
 
 > (narrator)
 1	Tell me, Muse, of the man of many turnings, who was driven

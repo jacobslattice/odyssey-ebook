@@ -1,4 +1,4 @@
-# Odyssey Book 4
+# The Odyssey: Book IV
 
 > (narrator)
 1	And they came to hollow Lacedaemon, the land of ravines,

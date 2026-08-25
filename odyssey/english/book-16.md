@@ -1,4 +1,4 @@
-# Odyssey Book 16
+# The Odyssey: Book XVI
 
 > (narrator)
 1	Meanwhile in the hut Odysseus and the godlike swineherd

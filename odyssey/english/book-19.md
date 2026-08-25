@@ -1,4 +1,4 @@
-# Odyssey Book 19
+# The Odyssey: Book XIX
 
 > (narrator)
 1	Godlike Odysseus was left in the hall

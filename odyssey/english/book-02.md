@@ -1,4 +1,4 @@
-# Odyssey Book 2
+# The Odyssey: Book II
 
 > (narrator)
 1	When early-born Dawn appeared, rose-fingered,

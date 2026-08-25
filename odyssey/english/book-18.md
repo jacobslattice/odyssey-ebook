@@ -1,4 +1,4 @@
-# Odyssey Book 18
+# The Odyssey: Book XVIII
 
 > (narrator)
 1	A public beggar came on them, who through the town

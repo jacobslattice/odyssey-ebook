@@ -1,4 +1,4 @@
-# Odyssey Book 21
+# The Odyssey: Book XXI
 
 > (narrator)
 1	The goddess, owl-eyed Athena, put it in the mind

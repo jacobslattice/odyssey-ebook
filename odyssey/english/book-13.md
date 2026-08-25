@@ -1,4 +1,4 @@
-# Odyssey Book 13
+# The Odyssey: Book XIII
 
 > (narrator)
 1	So he spoke, and they all became hushed in silence,
