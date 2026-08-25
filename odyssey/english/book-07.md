@@ -1,4 +1,4 @@
-# Odyssey Book 7
+# The Odyssey: Book VII
 
 > (narrator)
 1	So he prayed there, much-enduring godlike Odysseus,

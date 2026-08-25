@@ -1,4 +1,4 @@
-# Odyssey Book 12
+# The Odyssey: Book XII
 
 > Odysseus
 1	But when the ship left the stream of the river Ocean

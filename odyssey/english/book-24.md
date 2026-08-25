@@ -1,4 +1,4 @@
-# Odyssey Book 24
+# The Odyssey: Book XXIV
 
 > (narrator)
 1	Hermes Cyllenian was calling out the souls

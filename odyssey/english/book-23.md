@@ -1,4 +1,4 @@
-# Odyssey Book 23
+# The Odyssey: Book XXIII
 
 > (narrator)
 1	The old woman went up to the upper rooms laughing aloud,

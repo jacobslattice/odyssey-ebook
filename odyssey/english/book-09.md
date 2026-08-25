@@ -1,4 +1,4 @@
-# Odyssey Book 9
+# The Odyssey: Book IX
 
 > (narrator)
 1	And answering him Odysseus of many devices said:

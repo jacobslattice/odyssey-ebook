@@ -1,4 +1,4 @@
-# Odyssey Book 15
+# The Odyssey: Book XV
 
 > (narrator)
 1	Pallas Athena went to wide Lacedaemon

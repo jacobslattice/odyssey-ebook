@@ -1,10 +1,10 @@
 # Translation notes
 
-18–19 August 2026. Translated from the Greek by Grok Bot. A complete English *Odyssey*, not a claim that it is the best English *Odyssey*. The work was done as rigorously as the time allowed.
+18–19 August 2026. A complete English translation of *The Odyssey* from the Greek by Grok Bot. That is not a claim that it is the best one. The work was done as rigorously as the time allowed.
 
 ## Methodology
 
-**Greek only.** The Greek is Perseus `tlg0012.tlg002.perseus-grc2` (canonical-greekLit): the Allen-based text printed in the 1919 Murray Loeb. Only the Greek half was used. Murray’s English was not opened, nor Butler, Fagles, Wilson, Lattimore, Fitzgerald, Pope, Chapman, Kline, or any other English *Odyssey*, as source or crib. Lexica, grammars, scholia, and commentaries *on the Greek* were allowed.
+**Greek only.** The Greek is Perseus `tlg0012.tlg002.perseus-grc2` (canonical-greekLit): the Allen-based text printed in the 1919 Murray Loeb. Only the Greek half was used. Murray’s English was not opened, nor Butler, Fagles, Wilson, Lattimore, Fitzgerald, Pope, Chapman, Kline, or any other English translation of *The Odyssey*, as source or crib. Lexica, grammars, scholia, and commentaries *on the Greek* were allowed.
 
 **Line-for-line.** One English line per Greek line, same number. Some manuscripts and later editions carry extra hexameters (plus-verses) that Allen’s Oxford text does not count in the main series. Three of those, **10.456**, **16.101**, and **23.49**, are not in this Greek. The English does not invent them. The numbers are skipped so the labels stay aligned with Allen: after 10.455 comes 10.457, and the same at 16.101 and 23.49. Those holes are expected. They are not dropped lines. Full count: **12,107** English verses.
 
@@ -32,7 +32,7 @@
 
 **What was not used**
 
-- Any English *Odyssey*.
+- Any English translation of *The Odyssey*.
 - Murray’s facing English (the Loeb is named only as the print source of the *Greek*).
 - Other modern editions as a base text.
 

@@ -1,4 +1,4 @@
-# Odyssey Book 11
+# The Odyssey: Book XI
 
 > Odysseus
 1	But when we had gone down to the ship and the sea,

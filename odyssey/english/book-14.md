@@ -1,4 +1,4 @@
-# Odyssey Book 14
+# The Odyssey: Book XIV
 
 > (narrator)
 1	He went from the harbor up a rough path

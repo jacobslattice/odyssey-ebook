@@ -1,4 +1,4 @@
-# Odyssey Book 17
+# The Odyssey: Book XVII
 
 > (narrator)
 1	When early-born Dawn appeared, the rose-fingered one,
