@@ -176,8 +176,6 @@ def build_markdown(books: dict[int, list]) -> str:
         "",
         "translated from the Greek",
         "",
-        IMPRINT["author"],
-        "",
     ]
     parts.extend([
         IMPRINT["author"],
