@@ -11,10 +11,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
-ROOT = Path(__file__).resolve().parent.parent
-ENGLISH = ROOT / "english"
-EBOOK = ROOT / "ebook"
-COVER = ROOT.parent / "contest" / "epub-art" / "cover-exact.jpg"
+REPO = Path(__file__).resolve().parent
+ENGLISH = REPO / "odyssey" / "english"
+EBOOK = REPO / "ebook"
+COVER = REPO / "cover" / "cover-exact.jpg"
 COVER_SHA256 = "8c39436a4243ca11596380909b87c7962319d20cc24398493c7b5432b2252bc3"
 
 ROMAN = {

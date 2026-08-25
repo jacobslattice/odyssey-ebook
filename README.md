@@ -5,9 +5,7 @@ English Odyssey (draft 2) and the files used to build the EPUB.
 ## Rebuild
 
 ```
-python3 odyssey/scripts/build_ebook.py
+python3 build_ebook.py
 ```
 
-Writes `odyssey/ebook/Odyssey.epub`. Needs Python 3 only.
-
-See `REBUILD.txt` for the file list.
+Writes `ebook/Odyssey.epub`. Needs Python 3 only. That output folder is gitignored.
