@@ -7,7 +7,6 @@ import html
 import hashlib
 import re
 import zipfile
-from datetime import datetime, timezone
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -75,7 +74,8 @@ EXPECTED_TOTAL = 12107
 
 # Stable identifier for this edition (not a person).
 PUB_UUID = "urn:uuid:6f4e2c91-8a17-4b3d-9e05-2c8f1a7d4b60"
-MODIFIED = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+# Imprint date, not the clock time of a rebuild.
+MODIFIED = "2026-08-19T00:00:00Z"
 
 # Front-matter copy written for this edition.
 IMPRINT = {
