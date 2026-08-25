@@ -270,10 +270,11 @@ p {
 }
 body.title-page {
   text-align: center;
-  padding-top: 28%;
+  padding-top: 18%;
   max-width: 28em;
 }
 body.title-page h1,
+body.title-page .author,
 body.title-page .subtitle {
   text-align: center;
   display: block;
@@ -286,19 +287,16 @@ body.title-page h1 {
   letter-spacing: 0.06em;
   margin: 0 auto;
 }
+body.title-page .author {
+  margin: 0.85em auto 0;
+  font-size: 1.15em;
+}
 body.title-page .subtitle {
   font-style: italic;
   font-size: 1.12em;
-  margin-top: 1.35em;
+  margin-top: 2.8em;
   margin-bottom: 0;
   opacity: 0.78;
-}
-body.title-page .author {
-  text-align: center;
-  display: block;
-  width: 100%;
-  margin: 1.6em auto 0;
-  font-size: 1.15em;
 }
 body.imprint {
   max-width: 28em;
@@ -386,8 +384,8 @@ def title_xhtml() -> str:
     body = (
         '  <section epub:type="titlepage">\n'
         "    <h1>The Odyssey</h1>\n"
-        '    <p class="subtitle" style="text-align:center;display:block;width:100%;margin-left:auto;margin-right:auto;">translated from the Greek</p>\n'
         '    <p class="author" style="text-align:center;display:block;width:100%;margin-left:auto;margin-right:auto;">Homer</p>\n'
+        '    <p class="subtitle" style="text-align:center;display:block;width:100%;margin-left:auto;margin-right:auto;">translated from the Greek</p>\n'
         "  </section>\n"
     )
     return xhtml_shell("The Odyssey", "title-page", body)
@@ -410,16 +408,6 @@ def copyright_xhtml() -> str:
         "  </section>\n"
     )
     return xhtml_shell(IMPRINT["heading"], "imprint", body)
-
-
-def jacket_xhtml() -> str:
-    """Cover document for the jacket landmark only — not in the linear spine."""
-    body = (
-        '  <section epub:type="cover">\n'
-        '    <img src="cover.jpg" alt="Cover of The Odyssey"/>\n'
-        "  </section>\n"
-    )
-    return xhtml_shell("Cover", "cover-page", body)
 
 
 def book_xhtml(book: int, events: list) -> str:
@@ -462,7 +450,6 @@ def nav_xhtml() -> str:
         "  </nav>\n"
         '  <nav epub:type="landmarks" id="landmarks" hidden="hidden">\n'
         "    <ol>\n"
-        '      <li><a epub:type="cover" href="jacket.xhtml">Cover</a></li>\n'
         '      <li><a epub:type="frontmatter" href="title.xhtml">Title page</a></li>\n'
         '      <li><a epub:type="bodymatter" href="book-01.xhtml">Book I</a></li>\n'
         "    </ol>\n"
@@ -510,7 +497,6 @@ def toc_ncx() -> str:
 def content_opf() -> str:
     manifest_items = [
         '    <item id="cover-image" href="cover.jpg" media-type="image/jpeg" properties="cover-image"/>',
-        '    <item id="jacket" href="jacket.xhtml" media-type="application/xhtml+xml"/>',
         '    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>',
         '    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>',
         '    <item id="css" href="style.css" media-type="text/css"/>',
@@ -612,7 +598,6 @@ def main() -> None:
         "OEBPS/toc.ncx": toc_ncx().encode("utf-8"),
         "OEBPS/nav.xhtml": nav_xhtml().encode("utf-8"),
         "OEBPS/style.css": CSS.encode("utf-8"),
-        "OEBPS/jacket.xhtml": jacket_xhtml().encode("utf-8"),
         "OEBPS/cover.jpg": cover_bytes,
         "OEBPS/title.xhtml": title_xhtml().encode("utf-8"),
         "OEBPS/copyright.xhtml": copyright_xhtml().encode("utf-8"),
