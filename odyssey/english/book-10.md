@@ -1,4 +1,4 @@
-# Odyssey Book 10
+# The Odyssey: Book X
 
 > Odysseus
 1	We came to the Aeolian island. There lived

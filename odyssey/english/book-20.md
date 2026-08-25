@@ -1,4 +1,4 @@
-# Odyssey Book 20
+# The Odyssey: Book XX
 
 > (narrator)
 1	Godlike Odysseus was lying down in the porch.

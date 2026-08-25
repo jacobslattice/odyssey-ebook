@@ -1,4 +1,4 @@
-# Odyssey Book 6
+# The Odyssey: Book VI
 
 > (narrator)
 1	So he slept there, much-enduring godlike Odysseus,

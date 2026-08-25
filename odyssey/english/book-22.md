@@ -1,4 +1,4 @@
-# Odyssey Book 22
+# The Odyssey: Book XXII
 
 > (narrator)
 1	Odysseus of many devices was stripped of the rags

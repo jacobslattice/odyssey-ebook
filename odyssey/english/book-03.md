@@ -1,4 +1,4 @@
-# Odyssey Book 3
+# The Odyssey: Book III
 
 > (narrator)
 1	The Sun sprang up, leaving the lake of great beauty,

@@ -1,4 +1,4 @@
-# Odyssey Book 8
+# The Odyssey: Book VIII
 
 > (narrator)
 1	When early-born Dawn appeared, the rose-fingered one,
