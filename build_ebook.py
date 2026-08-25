@@ -517,8 +517,9 @@ def content_opf() -> str:
         '    <item id="title" href="title.xhtml" media-type="application/xhtml+xml"/>',
         '    <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml"/>',
     ]
-    # Jacket is cover-image only. Do not put the painting in the linear spine.
+    # Jacket is a spine item so the cover landmark is valid, but not linear.
     spine_refs = [
+        '    <itemref idref="jacket" linear="no"/>',
         '    <itemref idref="title"/>',
         '    <itemref idref="copyright"/>',
     ]
