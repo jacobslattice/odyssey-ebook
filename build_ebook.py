@@ -536,6 +536,10 @@ def content_opf() -> str:
         '    <dc:creator id="author">Homer</dc:creator>\n'
         '    <meta refines="#author" property="role" scheme="marc:relators">aut</meta>\n'
         '    <meta refines="#author" property="file-as">Homer</meta>\n'
+        '    <dc:contributor id="translator">Grok Bot</dc:contributor>\n'
+        '    <meta refines="#translator" property="role" scheme="marc:relators">trl</meta>\n'
+        '    <meta refines="#translator" property="file-as">Grok Bot</meta>\n'
+        f"    <dc:rights>{esc(IMPRINT['rights'])}</dc:rights>\n"
         "    <dc:description>translated from the Greek</dc:description>\n"
         '    <meta name="cover" content="cover-image"/>\n'
         f'    <meta property="dcterms:modified">{MODIFIED}</meta>\n'
