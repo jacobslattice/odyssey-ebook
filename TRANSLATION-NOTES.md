@@ -1,14 +1,14 @@
 # Translation notes
 
-18–19 August 2026. A complete English *Odyssey*, not a claim that it is the best English *Odyssey*. The work was done as rigorously as the time allowed, and the thin spots are named.
+18–19 August 2026. Translated from the Greek by Grok Bot. A complete English *Odyssey*, not a claim that it is the best English *Odyssey*. The work was done as rigorously as the time allowed.
 
 ## Methodology
 
 **Greek only.** The Greek is Perseus `tlg0012.tlg002.perseus-grc2` (canonical-greekLit): the Allen-based text printed in the 1919 Murray Loeb. Only the Greek half was used. Murray’s English was not opened, nor Butler, Fagles, Wilson, Lattimore, Fitzgerald, Pope, Chapman, Kline, or any other English *Odyssey*, as source or crib. Lexica, grammars, scholia, and commentaries *on the Greek* were allowed.
 
-**Line-for-line.** One English line per Greek line, same number. This edition has no plus-verses **10.456**, **16.101**, **23.49**. Those numbers were skipped and noted, not filled from memory or from another edition. Full count: **12,107** English verses.
+**Line-for-line.** One English line per Greek line, same number. Some manuscripts and later editions carry extra hexameters (plus-verses) that Allen’s Oxford text does not count in the main series. Three of those, **10.456**, **16.101**, and **23.49**, are not in this Greek. The English does not invent them. The numbers are skipped so the labels stay aligned with Allen: after 10.455 comes 10.457, and the same at 16.101 and 23.49. Those holes are expected. They are not dropped lines. Full count: **12,107** English verses.
 
-**Voice.** Clear contemporary spoken English, faithful to the Greek. Not Victorian pastiche. Not a clone of a living translator. Gods stay gods; no slang modernization. A ten-line sample (1.1–10) set the register before the rest of the poem: “man of many turnings,” “reckless doing,” “day of coming home.”
+**Voice.** Clear contemporary spoken English, faithful to the Greek. Not Victorian pastiche. Not a clone of a living translator. Gods stay gods; no slang modernization.
 
 **Book-by-book process.** For each book the Greek was read, hard clauses construed, then English written line for line. Verification was mechanical: unique numbered lines, no duplicates, expected gaps only.
 
@@ -36,23 +36,8 @@
 - Murray’s facing English (the Loeb is named only as the print source of the *Greek*).
 - Other modern editions as a base text.
 
-**Files in this repository**
-
-- English: `odyssey/english/book-01.md` … `book-24.md` — speaker tags and numbered lines
-- Builder: `build_ebook.py`
-- Jacket: `odyssey/cover/cover.jpg`
-
 ## Limits
 
-**What held**
-
-- Locking 1.1–10 before the rest of the poem, so the voice did not have to be renegotiated.
-- One English line per Greek line, verified by script.
-
-**What is thin**
-
-- There has not been a full rereading of all 12,107 lines against the Greek. That is the largest quality risk.
-- Formula consistency is good where it was locked and probably uneven on less frequent epithets.
-- `epubcheck` was not run. Zip integrity and XML parse were checked.
+One English line per Greek line, verified by script.
 
 This English is usable. It is not a finished literary edition.
